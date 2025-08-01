@@ -1,0 +1,195 @@
+/* Reset & Base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 80px auto 40px;
+    background: #514cafff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #514caf;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header a {
+    color: #514cafff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex-grow: 1;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+a.button-link {
+    background-color: #514caf;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+input[type="submit"]:hover,
+a.button-link:hover {
+    background-color: #3e3aa1;
+}
+
+/* Button Row for Reset/Login Actions */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-row a.reset-btn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #514caf;
+}
+
+.button-row a.reset-btn:hover {
+    background-color: #3c3796;
+}
+
+/* Messages */
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Notes Layout */
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note-box p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.note-box small {
+    color: #777;
+}
+
+.note-box a {
+    margin-right: 10px;
+    color: #514caf;
+    text-decoration: underline;
+}
+
+/* Toast Notification */
+#toast-popup {
+    transition: opacity 0.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
+
+/* Note display with stronger borders */
+.note-box {
+    border: 2px solid #514caf;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fafafa;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Action Buttons: Add Note, Home, Logout */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.action-buttons a {
+    padding: 10px 20px;
+    background-color: #514caf;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.action-buttons a:hover {
+    background-color: #3e3aa1;
+}
